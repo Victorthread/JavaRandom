@@ -2,17 +2,21 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-   Scanner scanner = new  Scanner(System.in);
-   System.out.println("Enter your name: ");
+    double width = 0;
+    double height = 0;
+    double area = 0;
 
-   String name = scanner.next();
-System.out.print("Hello " + name);
+    Scanner scanner = new Scanner (System.in);
 
-System.out.print("How old are you?");
+    System.out.print("Enter the width: ");
+width = scanner.nextDouble();
 
-int age = scanner.nextInt();
+System.out.print("Enter the height: ");
+height = scanner.nextDouble();
 
-System.out.print("You are " + age + " years old");
-   scanner.close();
+area = width * height;
+System.out.println("The area is: " + area + "cm²");
+
+    scanner.close();
     }
 }
